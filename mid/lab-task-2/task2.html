@@ -1,26 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1=1.0" />
     <title>Student Service request Portal</title>
-    <link rel="stylesheet" href="task2.css">
-</head>
+    <link rel="stylesheet" href="task2.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Student service request</h1>
+      <p>Digitalizing your admenitretive needs for a faster.</p>
+    </header>
 
-<header>
-    <h1>Student service request</h1>
-    <P>Digitalizing your admenitretive needs for a faster.</P>
-</header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main>
+      <section class="description-section">
+        <h2>Available Student Services</h2>
+        <p>
+          Welcome to the digital service desk. Below, you can submit official
+          request directly to the student affairs department. We process
+          academic transcipts, replacement ID cards, and general inquiries.
+          Please fill out the form accurately to avoid delays.
+        </p>
+      </section>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
+      <section class="form-section">
+        <h2>Service Request Form</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="student-name">Student Name:</label>
+            <input
+              type="text"
+              id="student-name"
+              name="studentName"
+              required
+              placeholder="John Doe"
+            />
+          </div>
 
-</body>
+          <div class="form-group">
+            <label for="student-id">Student ID:</label>
+            <input
+              type="text"
+              id="student-id"
+              name="studentId"
+              maxlength="10"
+              required
+              placeholder="e.g., 1234567890"
+            />
+          </div>
 
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="student@university.edu"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
